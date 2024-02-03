@@ -18,3 +18,30 @@ Usually used for comments that used more than 2 lines!
 Like this!
 */
 ```
+
+### Reserved Keywords
+- break: used to stop a loop execution prematurely.
+- default: used in switch statament to define a default behavior when none of the other match. 
+- func:  
+- interface
+- select
+- case 
+- defer
+- go           
+- map          
+- struct
+- chan         
+- else         
+- goto         
+- package      
+- switch
+- const        
+- fallthrough  
+- if           
+- range        
+- type
+- continue     
+- for          
+- import       
+- return       
+- var

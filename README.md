@@ -22,8 +22,8 @@ Like this!
 ### Reserved Keywords
 - break: used to stop a loop execution prematurely.
 - default: used in switch statament to define a default behavior when none of the other match. 
-- func:  
-- interface
+- func:  used to declare function. Functions can be public or private
+- interface: 
 - select
 - case 
 - defer
@@ -45,3 +45,24 @@ Like this!
 - import       
 - return       
 - var
+
+### Variable declarations
+
+Explicit declaration
+``` Go
+var age int
+var age = 10
+var salary, descont int
+var salary, descont = 100, 0.10
+var animal = "Dog"
+var (
+	age    int
+	animal string
+)
+```
+
+Short or Implicit declaration
+``` Go
+age := 10
+salary, descont := 200, 0.10
+```

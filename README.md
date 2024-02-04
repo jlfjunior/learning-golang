@@ -38,7 +38,7 @@ Like this!
 - const        
 - fallthrough  
 - if           
-- range        
+- range: used to iterates in for loops over a slice or map.      
 - type
 - continue     
 - for          

@@ -11,3 +11,4 @@ Go is a general-purpose language designed with systems programming in mind. It i
 ## Fundamentals
 - [x] [Contants, Variables e Types](docs/variables.md)
 - [x] [Functions](docs/functions.md)
+- [x] [Arithmetic Operators](docs/arithmetic.md)

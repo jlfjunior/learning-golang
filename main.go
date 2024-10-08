@@ -5,10 +5,16 @@ import (
 )
 
 func main() {
-	age := 29
-	height := 1.75
-	name := "Jose Junior"
-	isAdult := true
+	value := reverseString("ilha")
+	fmt.Println("Valor: ", value)
+}
 
-	fmt.Println(age, height, name, isAdult)
+func reverseString(s string) string {
+	runes := []rune(s)
+
+	for i, j := 0, len(runes)-1; i < j; i, j = i+1, j-1 {
+		runes[i], runes[j] = runes[j], runes[i]
+	}
+
+	return string(runes)
 }

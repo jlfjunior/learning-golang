@@ -40,27 +40,6 @@ Like this!
 - return: used to terminate the execution of a function and return control to the calling function.
 - var: is used to declare variables.
 
-### Variable declarations
-
-Explicit declaration
-``` Go
-var age int
-var age = 10
-var salary, descont int
-var salary, descont = 100, 0.10
-var animal = "Dog"
-var (
-	age    int
-	animal string
-)
-```
-
-Short or Implicit declaration
-``` Go
-age := 10
-salary, descont := 200, 0.10
-```
-
 ### Function declarations
 
 Package function. You just need to use lowercase in the first letter.

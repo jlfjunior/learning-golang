@@ -8,7 +8,8 @@ import (
 
 func main() {
 
-	numbers := []int{2, 7, 11, 15}
-
-	fmt.Println(s.TwoSum(numbers, 9))
+	numbers := []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+	fmt.Println("Unsorted: ", numbers)
+	s.CustomEvenOddsSort(numbers)
+	fmt.Println("Sorted: ", numbers)
 }

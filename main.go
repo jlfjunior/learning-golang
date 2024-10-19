@@ -7,6 +7,6 @@ import (
 )
 
 func main() {
-	number := 50
-	fmt.Printf("Fibonacci of %v: %v", number, s.Fibonacci(number))
+	number := 10
+	fmt.Printf("Fibonacci of %v: %v", number, s.MemorizedFibonacci((number)))
 }

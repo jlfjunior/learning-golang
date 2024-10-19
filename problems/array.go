@@ -77,3 +77,34 @@ func Fibonacci(number int) int {
 
 	return sum
 }
+
+func MemorizedFibonacci(number int) int {
+	if number <= 1 {
+		return number
+	}
+
+	var fibonacci func(number int, answers map[int]int) int
+	fibonacci = func(number int, answers map[int]int) int {
+		sum, n1, n2 := 0, number-1, number-2
+
+		if value, ok := answers[n1]; ok {
+			sum += value
+		} else {
+			answers[n1] = fibonacci(n1, answers)
+			sum += answers[n1]
+		}
+
+		if value, ok := answers[n2]; ok {
+			sum += value
+		} else {
+			answers[n2] = fibonacci(n2, answers)
+			sum += answers[n2]
+		}
+
+		return sum
+	}
+
+	answers := map[int]int{0: 0, 1: 1}
+
+	return fibonacci(number, answers)
+}

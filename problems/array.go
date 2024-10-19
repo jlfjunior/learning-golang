@@ -67,3 +67,13 @@ func CustomEvenOddsSort(numbers []int) {
 	quickSort(numbers[:mid+1], false)
 	quickSort(numbers[mid+1:], true)
 }
+
+func Fibonacci(number int) int {
+	if number <= 1 {
+		return number
+	}
+
+	sum := Fibonacci(number-1) + Fibonacci(number-2)
+
+	return sum
+}
